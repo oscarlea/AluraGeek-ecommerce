@@ -1,0 +1,25 @@
+:root {
+    --bg-color: #eae4d5; /* Este es un tono beige claro y se utiliza como fondo. */
+    --oscuro: #030303; /* Este es un tono negro oscuro y se utiliza como color de texto o para elementos destacados. */
+    --marron: #471714; /* Este es un tono marrón oscuro y se utiliza como color de fondo o de acento. */
+    --rojo-oscuro: #8c2c26; /* Este es un tono rojo oscuro y se utiliza para títulos o botones. */
+    --rojo: #d14138; /* Este es un tono rojo oscuro similar al anterior y también se utiliza para títulos o botones. */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; 
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-family: "Gothic A1";
+    font-family: 'Crimson Text', serif;
+    font-family: Alegreya, sans-serif;
+}

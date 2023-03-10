@@ -1,0 +1,31 @@
+.footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rojo);
+}
+
+.footer__logo__imagen {
+    width: 4rem;
+    height: auto;   
+}
+
+.footer__logo__titulo {
+    font-family: Ink free;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer__lista {
+    text-align: center;
+
+}
+
+.footer__item {
+    padding: .5rem;
+}
+
+.footer__link {
+    color: #fff;
+}
