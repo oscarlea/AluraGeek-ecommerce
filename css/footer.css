@@ -19,7 +19,6 @@
 
 .footer__lista {
     text-align: center;
-
 }
 
 .footer__item {
@@ -28,4 +27,16 @@
 
 .footer__link {
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer {
+        padding: 2rem;
+        flex-grow: 1;
+    }
+
+    .footer__lista {
+        text-align: start;
+    }
 }

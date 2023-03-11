@@ -23,3 +23,11 @@ body {
     font-family: 'Crimson Text', serif;
     font-family: Alegreya, sans-serif;
 }
+
+@media (max-width: 1200px) {
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #d14138;
+    }
+  }

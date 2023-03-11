@@ -1,0 +1,28 @@
+
+-------------------------------------------------------
+pantilla
+***********
+<section class="catalogo">
+    <div class="catalogo__categoria">
+        <div class="categoria">
+            <h2 class="categoria__titulo">Carteras</h2>
+            <a href="#" class="categoria__link">Ver todo -></a>
+        </div>
+
+        <div class="productos">
+            <!-- AQUÍ SE AGREGARÁN LOS PRODUCTOS DINÁMICAMENTE DESDE LA BASE DE DATOS -->
+        </div>
+    </div>
+</section>
+
+<!-- PLANTILLA HTML PARA CADA PRODUCTO -->
+<template id="producto-template">
+    <div class="producto">
+        <img src="" alt="" class="producto__imagen">
+        <h2 class="producto__titulo"></h2>
+        <h3 class="producto__precio"></h3>
+        <a href="#" class="producto__link">Ver producto</a>
+    </div>
+</template>
+
+----------------------------------------------------------------------------

@@ -44,8 +44,6 @@
 }
 
 .producto__imagen {
-    width: 156px;
-    /* height: 174px; */
     margin-right: 1rem;
     margin-bottom: .5rem;
     width: calc((360px - (16px * 3)) / 2);
@@ -68,4 +66,19 @@
     font-size: 14px;
     font-weight: bold;
     color: var(--rojo-oscuro);
+}
+
+@media screen and (min-width: 768px) {
+
+    .catalogo {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+    .producto__imagen {
+        width: calc((768px - (16px * 7)) / 4);
+    }
+
+    .producto__link {
+        font-size: 1rem;
+    }
 }

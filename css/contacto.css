@@ -103,3 +103,13 @@
     text-align: center;
     cursor: pointer;
 }
+
+@media screen and (min-width: 768px) {
+
+    .contacto {
+        padding: 1rem;
+        padding-right: 2rem;
+        flex-grow: 4;
+    }
+
+}

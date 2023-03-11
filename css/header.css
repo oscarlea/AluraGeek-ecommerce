@@ -51,11 +51,11 @@ body {
     bottom: 3px;
 }
 
-.header__boton {
+.header__login__boton {
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-    background-color: white;
+    background-color: #f5f5f5;
     color: #8c2c26 ;
     border: 1px solid #8c2c26;
     padding: 10px 16px;
@@ -66,9 +66,84 @@ body {
     cursor: pointer;
 }
 
-.header__icono i {
+/* .header__search {
+    background-image: url('../img/Icone_search.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 40px;
+} */
+
+.header__search input[type="text"] {
+    display: none;
+    /* width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; */
+}
+
+/* .header__search:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    left: 10px;
+    content: "\f002";
+} */
+
+.header__search__icon i {
     color: #8c2c26; 
     padding: .2rem;
-  }
+}
   
+@media screen and (max-width: 767px) {
 
+    .search-bar {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .header__search {
+        order: 2;
+        /* margin-left: auto; */
+    }
+
+    .header__login {
+        order: 3;
+    }
+
+    .header__search {
+        display: flex;
+        align-items: center;
+    } 
+
+    .header__search input[type="text"] {
+        display: flex;
+        flex-grow: 1;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        font-family: Alegreya, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 16px;
+        padding: .5rem 1rem;
+        background-color: #f5f5f5;
+    }
+
+    .header__search__icon {
+        position: relative;
+        right: 31px;
+    }
+
+    input:focus {
+        outline: none;
+      }
+
+}

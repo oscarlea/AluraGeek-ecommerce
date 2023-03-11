@@ -1,0 +1,32 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Cartera de cuero",
+      "descripcion": "Cartera de cuero marrón con cierre dorado",
+      "precio": 10000,
+      "imagen": "img/productos/cartera.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Cartera negra",
+      "descripcion": "Cartera negra con diseño elegante",
+      "precio": 11100,
+      "imagen": "img/productos/cartera_202212171340265987429635186048934.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Cartera roja",
+      "descripcion": "Cartera roja con detalles dorados",
+      "precio": 12000,
+      "imagen": "img/productos/cartera_202212171344238923203314292699046.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Cartera blanca",
+      "descripcion": "Cartera blanca con diseño moderno",
+      "precio": 9000,
+      "imagen": "img/productos/cartera_202212171346443533622372333198824.jpg"
+    }
+  ]
+}
