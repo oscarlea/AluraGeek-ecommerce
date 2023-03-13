@@ -147,3 +147,46 @@ body {
       }
 
 }
+
+@media screen and (min-width: 1440px) {
+    .header {
+        padding-top: 2rem;
+        padding-left: 9.8rem;
+        padding-right: 9.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .header__login__boton {
+        font-size: 1rem;
+        font-weight: normal;
+        padding: 10px 16px;
+        width: 182px;
+        height: 51px;
+        line-height: 25px;
+    }
+
+    .header__logo__imagen {
+        width: 5rem;
+        height: auto;
+    }
+
+    .header__logo__titulo span.span1 {
+        font-size: 1.5rem;
+    }
+
+    .header__logo__titulo span.span2 {
+        font-size: 1.5rem;
+    }
+
+    .header__logo__titulo span.span3 {
+        font-size: .5rem;
+        line-height: 8px;
+        left: 20px;
+        bottom: 0px;
+    }
+
+    .header__search input[type="text"] {
+        width: 25rem;
+    }
+
+}

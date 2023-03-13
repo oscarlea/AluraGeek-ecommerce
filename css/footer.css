@@ -27,6 +27,11 @@
 
 .footer__link {
     color: #fff;
+    font-size: 1rem;
+}
+
+.developer__autor {
+    font-size: x-small;
 }
 
 @media screen and (min-width: 768px) {
@@ -39,4 +44,24 @@
     .footer__lista {
         text-align: start;
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .footer {
+        padding-left: 9.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 3;
+    }
+
+    .footer__logo__imagen {
+        width: 10rem;
+    }
+
+    .developer__autor {
+        font-size: small;
+    }
+
 }

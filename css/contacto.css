@@ -4,6 +4,7 @@
 
 .contacto__titulo {
     margin: 0;
+    font-size: 1rem;
 }
 
 .contacto__form {
@@ -81,9 +82,11 @@
 .form-group input:focus + .form-label,
 .form-group input:not(:placeholder-shown) + .form-label {
     transform: translate(5px, -9px);
-    background-color: #383838;
+    background-color: #d14138;
     font-size: 12px;
     color: #eee;
+    border-radius: 4px ;
+    line-height: 15px;
 }
 
 /* ----------------------------------------------------------- */
@@ -112,4 +115,13 @@
         flex-grow: 4;
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+
+    .contacto {
+        padding-right: 9.5rem;
+        padding-bottom: 3rem;
+        flex-grow: 5;
+    }
 }
