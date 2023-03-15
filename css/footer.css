@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--rojo);
+    
 }
 
 .footer__logo__imagen {
@@ -14,6 +15,7 @@
 .footer__logo__titulo {
     font-family: Ink free;
     font-weight: 600;
+    font-style: italic;
     margin-bottom: 1rem;
 }
 

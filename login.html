@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>AluraGeek - Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
-    
-    <script src="https://kit.fontawesome.com/38a992f687.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/developer.css">
     <link rel="stylesheet" href="css/foo.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
     <header class="header">
 
         <div class="header__logo">
-            <a href="index.html" class="header__logo__link" >
+            <a href="index.html" class="header__logo__link">
                 <img src="img/logo2.png" alt="" class="header__logo__imagen">
             </a>
                 <h1 class="header__logo__titulo">
@@ -36,13 +34,13 @@
                     <span class="span3"><br>DESIGN</span> 
                 </h1>
         </div>
-
-        <div class="header__login">
+          
+<!--         <div class="header__login">
             <a href="#" class="header__login__link">
-                <botton class="header__login__boton" onclick="location.href='login.html'">Login</botton>
+                <botton class="header__login__boton">Login</botton>
             </a>
         </div>
-        
+ -->        
         <div class="header__search">
 
             <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
@@ -53,38 +51,40 @@
 
     </header>
 
-    <!-- section.banner -->
+    <!-- section.login -->
+    
+    <div class="login">
+        <!-- <img class="login__imagen" src="img/bat.png" alt=""> -->
+        <form class="login__form" action="summit" >
+            <h1 class="login__titulo">Iniciar Sesión</h1>
+            <input class="login__input" name="email" type="text" placeholder="Escriba su correo electrónico">
+            <input class="login__input" name="password" type="password" placeholder="Escriba su contraseña">
+            <button class="login__boton" onclick="login()">Entrar</button>
+        </form>
 
-	<section class="banner">
-		<h1 class="banner__titulo">Febrero Promocional</h1>
-		<h2 class="banner__subtitulo">Productos selecionados con 33% de descuento</h2>
-        <a href="#" class="banner__link">
-            <botton class="banner__boton">Ofertas</botton>
-        </a>
-	</section>
-
-    <!-- section.catalogo> -->
-
-    <section class="catalogo">
-        <div class="catalogo__contenedor">
-            <!--  -->
-        </div>
-    </section>
+    </div>
 
     <!-- section.footer -->
 
     <section class="foo">
 
         <div class="footer">
+            <img src="img/bat.png" alt="" class="bat">
+            <img src="img/bruja.png" alt="" class="bruja">
+            <img src="img/grieta.png" alt="" class="grieta">
+            <!-- <img src="img/shadow-box-frame-1.png" alt="" class="marco"> -->
+
             <div class="footer__logo">
-                <a href="index.html" class="footer__logo__link"></a><img src="img/logo2.png" alt="" class="footer__logo__imagen">
+                <a href="index.html" class="footer__logo__link">
+                    <img src="img/logo2.png" alt="" class="footer__logo__imagen">
+                </a>
                 <h1 class="footer__logo__titulo">GatoNegro</span>
                 </h1>
             </div>
     
             <nav class="footer__menu">
                 <ul class="footer__lista">
-                    <li class="footer__item"><a href="header" class="footer__link">Quienes somos</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Quienes somos</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Programa de fidelidad</a></li>
                     <li class="footer__item"><a href="#" class="footer__link">Nuestras tiendas</a></li>
@@ -93,6 +93,7 @@
                 </ul>
             </nav>
         </div>
+
     
         <div class="contacto">
             <form action="" class="contacto__form">
@@ -120,7 +121,8 @@
         <p class="developer__autor">Desarrollado por Oscar Leañez <br> 2023</p>
     </section>
 
-
+    <script src="https://kit.fontawesome.com/38a992f687.js" crossorigin="anonymous"></script>
     <script type="module" src="controlador/controlador-2.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
