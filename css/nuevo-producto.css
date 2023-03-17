@@ -1,0 +1,43 @@
+.producto {
+    margin: 1rem;
+}
+
+.producto__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.producto__titulo {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.producto__input {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .producto {
+        margin: 2rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .producto {
+        margin: 4rem 9.5rem;
+    }
+
+    .producto__contenedor {
+        max-width: 50%;
+        position: relative;
+        left: 25%;
+    }
+}

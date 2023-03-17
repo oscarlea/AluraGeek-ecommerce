@@ -25,7 +25,7 @@
     color: #333;
 }
 
-.login__input {
+ .login__input {
     margin-bottom: 1rem;
     font-family: Alegreya, sans-serif;
     font-size: 1rem;
@@ -42,9 +42,9 @@
     font-size: 1rem;
     font-family: Alegreya, sans-serif;
     padding: 10px;
-}
+} 
 
-.login__boton {
+/* .login__boton {
     font-family: Alegreya;
     font-size: 14px;
     font-weight: 600;
@@ -58,29 +58,9 @@
     display: inline-block;
     text-align: center;
     cursor: pointer;
-}
-
-
-/* .login__imagen {
-
-    width: 12rem;
-    height: auto;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
-    position: absolute;
-    left: -60px;
-    top: 391px;
-    order: 10;
-} */
-
-/* .footer {
-    background-image: url("../img/bat.png");
-    background-size: 4rem;
-    background-repeat: no-repeat;
 } */
 
 .bat {
-    /* background-image: url("../img/4.png"); */
-    /*   background-repeat: no-repeat; */
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
     width: 4rem;
     left: 10px;
@@ -100,7 +80,7 @@
 .grieta {
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
     width: 4rem;
-    left: 486px;
+    left: -120px;
     top: 87px;
     position: relative;
     opacity: 0.2;

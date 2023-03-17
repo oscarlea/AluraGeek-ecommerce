@@ -35,17 +35,8 @@
                 </h1>
         </div>
           
-<!--         <div class="header__login">
-            <a href="#" class="header__login__link">
-                <botton class="header__login__boton">Login</botton>
-            </a>
-        </div>
- -->        
         <div class="header__search">
-
             <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
-            <!-- <button type="submit">Buscar</button> -->
-
             <a class="header__search__icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
 
@@ -59,7 +50,9 @@
             <h1 class="login__titulo">Iniciar Sesión</h1>
             <input class="login__input" name="email" type="text" placeholder="Escriba su correo electrónico">
             <input class="login__input" name="password" type="password" placeholder="Escriba su contraseña">
-            <button class="login__boton" onclick="login()">Entrar</button>
+            <button class="boton__rojo fit-content" onclick="login()">
+                <div class="boton__rojo__texto">Entrar</div>
+            </button>
         </form>
 
     </div>
@@ -97,21 +90,23 @@
     
         <div class="contacto">
             <form action="" class="contacto__form">
-                <span class="contacto__titulo">Hable con nosotros</span>
-    
-                <div class="form-group">
-                    <input type="text" class="contacto__input" name="nombre" placeholder="Nombre" maxlength="50" pattern="^[a-zA-ZñÑ\s]+$" required>
-                    <label class="form-label" for="nombre">Nombre</label>
-                </div>
-    
-                <div class="form-group">
-                    <input type="text" class="contacto__input" name="mensaje" placeholder="Mensaje" maxlength="50" required>
-                    <label class="form-label" for="Mensaje">Mensaje</label>
-                </div>
-    
-                <button class="contacto__boton" type="submit" id="contacto__boton" disabled-asdads>Enviar mensaje</button>
+              <span class="contacto__titulo">Hable con nosotros</span>
+        
+              <div class="input__contenedor">
+                <input type="text" class="input__style" name="nombre" placeholder="" maxlength="50" pattern="^[a-zA-ZñÑ\s]+$" required>
+                <label class="label__style">Nombre</label>
+              </div>
+        
+              <div class="input__contenedor">
+                <textarea class="textarea__style" name="mensaje" id="" cols="30" rows="2" maxlength="50" required></textarea>
+                <label class="label__style"1>Mensaje</label>
+              </div>
+        
+              <button class="boton__rojo fit-content" type="submit" id="contacto__boton">
+                <div class="boton__rojo__texto">Enviar mensaje</div>
+              </button>
             </form>
-        </div>
+          </div>
 
     </section>
 

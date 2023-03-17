@@ -4,6 +4,8 @@
     --marron: #471714; /* Este es un tono marrón oscuro y se utiliza como color de fondo o de acento. */
     --rojo-oscuro: #8c2c26; /* Este es un tono rojo oscuro y se utiliza para títulos o botones. */
     --rojo: #d14138; /* Este es un tono rojo oscuro similar al anterior y también se utiliza para títulos o botones. */
+    --placeholder-gris: #999999;
+    --font-family: Alegreya, sans-serif;
 }
 
 *{
@@ -14,15 +16,142 @@ html {
     font-size: 16px; 
     max-width: 1440px;
     margin: 0 auto;
-background-color: white;
+    background-color: #f5f5f5;
 }
 
 body {
-    font-family: Raleway, sans-serif;
+/*     font-family: Raleway, sans-serif;
     font-family: "Gothic A1";
-    font-family: 'Crimson Text', serif;
+    font-family: 'Crimson Text', serif; */
     font-family: Alegreya, sans-serif;
     background-color: #eae4d5;
+}
+
+/* / / / INPUT FIELDS/ / / */
+
+.input__contenedor {
+    float: left;
+    /* width: 293px; */
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.input__style:focus ~ .label__style, .textarea__style:focus ~ .label__style, .input__style:valid ~ .label__style, .textarea__style:valid ~ .label__style {
+    font-size: 0.75em;
+    color: #999;
+    top: -10px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.input__contenedor .label__style {
+    color: var(--placeholder-gris);
+    padding: 1.3rem 12px 1rem 12px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.input__style,
+.textarea__style {
+    padding-top: 25px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--font-family) ;
+    color: var(--oscuro);
+    border-radius: 4px;
+}
+
+.input__style:focus,
+.textarea__style:focus { outline: 0; }
+
+.input__style:focus ~ span,
+.textarea__style:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+.textarea__style {
+    width: 100%;
+    margin-bottom: 1rem;
+/*     min-height: 15em; */
+}
+
+.input__style {
+    margin-bottom: 1rem;
+}
+
+/*  /// FIN INPUTS ///  */
+
+.boton__rojo {
+    cursor: pointer;
+    border: 0;
+    padding: 11px;
+    background-color: var(--rojo);
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+}
+
+.boton__rojo__texto {
+    position: relative;
+    font-family: var(--font-family);
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.boton__blanco {
+    cursor: pointer;
+    border: 1px solid #8c2c26;
+    padding: 11px;
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 133px;
+}
+
+.boton__blanco__texto {
+    position: relative;
+    font-family: var(--font-family);
+    color: #8c2c26 ;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.44px;
+    letter-spacing: 0em;
+}
+
+/* .header__login__boton {
+    border: 1px solid #8c2c26;
+    padding: .6rem;
+    width: inherit;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+ */
+
+.fit-content {
+    width: fit-content;
 }
 
 @media (max-width: 1200px) {

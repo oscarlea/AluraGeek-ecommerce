@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Nuevo Producto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/38a992f687.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/developer.css">
+    <link rel="stylesheet" href="css/foo.css">
+    <link rel="stylesheet" href="css/nuevo-producto.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="header__logo">
+            <a href="index.html" class="header__logo__link" >
+                <img src="img/logo2.png" alt="" class="header__logo__imagen">
+            </a>
+                <h1 class="header__logo__titulo">
+                    <span class="span1">Gato</span>
+                    <span class="span2">Negro</span> 
+                    <span class="span3"><br>DESIGN</span> 
+                </h1>
+        </div>
+
+        <div class="header__login">
+            <a href="#" class="header__login__link">
+                <!-- <botton class="header__login__boton" onclick="location.href='login.html'">Menú Administrador</botton> -->
+                <button class="boton__blanco fit-content" type="submit">
+                  <div class="boton__blanco__texto">Menú Administrador</div>
+                </button>
+            </a>
+        </div>
+        
+        <div class="header__search">
+            <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
+            <a class="header__search__icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+    </header>
+
+    <!-- section.producto -->
+
+    <section class="producto">
+      <form action="" class="producto__contenedor">
+        <h1 class="producto__titulo">Agregar nuevo producto</h1>
+
+        <div class="input__contenedor">
+          <input type="text" class="input__style" name="id" placeholder="" required>
+          <label class="label__style">ID</label>
+        </div>
+
+        <div class="input__contenedor">
+          <input type="text" class="input__style" name="categoria_id" placeholder="" required>
+          <label class="label__style">Categoría ID</label>
+        </div>
+
+        <div class="input__contenedor">
+          <input type="text" class="input__style" name="nombre" placeholder="" required>
+          <label class="label__style">Nombre del producto</label>
+        </div>
+
+        <div class="input__contenedor">
+          <input type="text" class="input__style" name="url" placeholder="" required>
+          <label class="label__style">URL de la imagen</label>
+        </div>
+
+        <div class="input__contenedor">
+          <input type="text" class="input__style" name="precio" placeholder="" required>
+          <label class="label__style">Precio del producto</label>
+        </div>
+
+        <div class="input__contenedor">
+          <textarea class="textarea__style" name="descripcion" id="" cols="30" rows="2" required></textarea>
+          <label class="label__style">Descripción del producto</label>
+        </div>
+
+        <button class="boton__rojo">
+          <div class="boton__rojo__texto">Agregar Producto</div>
+        </button>
+    </form>
+
+    </section>
+
+    <!-- section.footer -->
+
+    <section class="foo">
+    
+      <div class="footer">
+        <div class="footer__logo">
+          <a href="index.html" class="footer__logo__link"></a><img src="img/logo2.png" alt="" class="footer__logo__imagen">
+          <h1 class="footer__logo__titulo">GatoNegro</span>
+          </h1>
+        </div>
+    
+        <nav class="footer__menu">
+          <ul class="footer__lista">
+            <li class="footer__item"><a href="header" class="footer__link">Quienes somos</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Programa de fidelidad</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Nuestras tiendas</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Quiero ser franquiciado</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Anúncie aquí</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+      <div class="contacto">
+        <form action="" class="contacto__form">
+          <span class="contacto__titulo">Hable con nosotros</span>
+    
+          <div class="input__contenedor">
+            <input type="text" class="input__style" name="nombre" placeholder="" maxlength="50" pattern="^[a-zA-ZñÑ\s]+$" required>
+            <label class="label__style">Nombre</label>
+          </div>
+    
+          <div class="input__contenedor">
+            <textarea class="textarea__style" name="mensaje" id="" cols="30" rows="2" maxlength="50" required></textarea>
+            <label class="label__style">Mensaje</label>
+          </div>
+    
+          <button class="boton__rojo fit-content" type="submit" id="contacto__boton">
+            <div class="boton__rojo__texto">Enviar mensaje</div>
+          </button>
+        </form>
+      </div>
+    
+    </section>
+
+    <!-- section.developer -->
+
+    <section class="developer">
+        <p class="developer__autor">Desarrollado por Oscar Leañez <br> 2023</p>
+    </section>
+
+
+    <!-- <script type="module" src="controlador/controlador-2.js"></script> -->
+</body>
+</html>
