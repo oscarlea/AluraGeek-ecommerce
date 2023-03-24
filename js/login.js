@@ -6,9 +6,12 @@ function login() {
 
     if (user == "prueba" && password == "1234") {
         alert("ya")
-        window.location.href = "nuevo.html";
+        window.location.href = "producto-nuevo.html";
     } else {
         alert("none")
-        window.location.href = "nuevo.html";
+        /* window.location.href = "../producto-nuevo.html"; */
+        /* window.location.href = "http://127.0.0.1:5500/producto-nuevo.html"; */
+        location.href='http://127.0.0.1:5500/producto-nuevo.html'
+        
     }
 }

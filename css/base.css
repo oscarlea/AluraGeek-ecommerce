@@ -1,11 +1,20 @@
 :root {
     --bg-color: #eae4d5; /* Este es un tono beige claro y se utiliza como fondo. */
-    --oscuro: #030303; /* Este es un tono negro oscuro y se utiliza como color de texto o para elementos destacados. */
+    --oscuro: #333333; /* #030303 Este es un tono negro oscuro y se utiliza como color de texto o para elementos destacados. */
     --marron: #471714; /* Este es un tono marrón oscuro y se utiliza como color de fondo o de acento. */
     --rojo-oscuro: #8c2c26; /* Este es un tono rojo oscuro y se utiliza para títulos o botones. */
     --rojo: #d14138; /* Este es un tono rojo oscuro similar al anterior y también se utiliza para títulos o botones. */
     --placeholder-gris: #999999;
     --font-family: Alegreya, sans-serif;
+    /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+    --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
+    --step-0: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --step-1: clamp(1.20rem, calc(1.13rem + 0.36vw), 1.41rem);
+    --step-2: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
+    --step-3: clamp(1.73rem, calc(1.56rem + 0.82vw), 2.20rem);
+    --step-4: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
+    --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
 }
 
 *{
@@ -14,7 +23,7 @@
 
 html {
     font-size: 16px; 
-    max-width: 1440px;
+/*     max-width: 1440px; */
     margin: 0 auto;
     background-color: #f5f5f5;
 }
@@ -25,17 +34,25 @@ body {
     font-family: 'Crimson Text', serif; */
     font-family: Alegreya, sans-serif;
     background-color: #eae4d5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+
+    /* gap: 1rem; */
 }
 
 /* / / / INPUT FIELDS/ / / */
 
 .input__contenedor {
     float: left;
-    /* width: 293px; */
     position: relative;
     border-radius: 4px;
     width: 100%;
 }
+
+
 
 .input__style:focus ~ .label__style, .textarea__style:focus ~ .label__style, .input__style:valid ~ .label__style, .textarea__style:valid ~ .label__style {
     font-size: 0.75em;
@@ -64,7 +81,7 @@ body {
     padding-right: 12px;
     border: 0;
     width: 100%;
-    font-size: 1rem;
+    font-size: var(--step-0); /*  1rem; */
     font-family: var(--font-family) ;
     color: var(--oscuro);
     border-radius: 4px;
@@ -86,9 +103,19 @@ body {
 /*     min-height: 15em; */
 }
 
-.input__style {
+/* .input__style {
     margin-bottom: 1rem;
-}
+} */
+
+input[type=file]::file-selector-button {
+    background-color: #fff;
+    color: #000;
+    border: 0px;
+    border-right: 1px solid #e5e5e5;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: .5s;
+  }
 
 /*  /// FIN INPUTS ///  */
 
@@ -97,12 +124,13 @@ body {
     border: 0;
     padding: 11px;
     background-color: var(--rojo);
-    align-self: stretch;
+/*     align-self: stretch; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     min-width: 118px;
+    height: min-content;
 }
 
 .boton__rojo__texto {
@@ -110,7 +138,7 @@ body {
     font-family: var(--font-family);
     color: #fff;
     text-align: left;
-    font-size: 14px;
+    font-size: var(--step--1);
     font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
@@ -121,12 +149,13 @@ body {
     border: 1px solid #8c2c26;
     padding: 11px;
     background-color: #fff;
-    align-self: stretch;
+/*     align-self: stretch; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     min-width: 133px;
+    height: min-content;
 }
 
 .boton__blanco__texto {
@@ -134,30 +163,30 @@ body {
     font-family: var(--font-family);
     color: #8c2c26 ;
     text-align: left;
-    font-size: 14px;
+    font-size: var(--step--1);
     font-weight: 600;
     line-height: 16.44px;
     letter-spacing: 0em;
 }
 
-/* .header__login__boton {
-    border: 1px solid #8c2c26;
-    padding: .6rem;
-    width: inherit;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-}
- */
-
 .fit-content {
     width: fit-content;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
+
+/*     body {
+        gap: 2rem;
+    } */
+}
+
+@media (min-width: 1440px) {
+
     body {
-      max-width: 1200px;
+      /* max-width: 1440px; */
       margin: 0 auto;
       background-color: #d14138;
+      /* gap: 4rem; */
     }
+
   }

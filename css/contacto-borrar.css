@@ -1,0 +1,36 @@
+.contacto {
+    padding: 1rem;
+}
+
+.contacto__titulo {
+    margin: 0;
+    font-size: var(--step-0);
+    color: var(--oscuro);
+    /* margin-bottom: 1rem; */
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contacto {
+        padding: 1rem;
+        padding-right: 2rem;
+        flex-grow: 4;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .contacto {
+        padding-right: 9.5rem;
+        padding-bottom: 3rem;
+        flex-grow: 5;
+    }
+}

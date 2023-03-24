@@ -1,51 +1,270 @@
 {
-    "categorias": [
-      {
-        "id": 1,
-        "nombre": "Carteras"
-      },
-      {
-        "id": 2,
-        "nombre": "Anillos"
-      },
-      {
-        "id": 3,
-        "nombre": "Otros productos"
-      }      
-    ],
-    "productos": [
-      {        "id": 1,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 10000,        "imagen": "img/productos/cartera-001.jpg"      },
-      {        "id": 2,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-004.jpg"      },
-      {        "id": 3,        "categoria_id": 1,        "nombre": "Porta celular",        "precio": 12000,        "imagen": "img/productos/cartera-003.jpg"      },
-      {        "id": 4,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 11000,        "imagen": "img/productos/cartera-002.jpg"      },
-      {        "id": 5,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-005.jpg"      },
-      {        "id": 6,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-006.jpg"      },
-      {        "id": 7,        "categoria_id": 1,        "nombre": "Porta cosméticos",        "precio": 9000,        "imagen": "img/productos/cartera-007.jpg"      },                  
-      {        "id": 8,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-008.jpg"      },                  
-      {        "id": 9,        "categoria_id": 1,        "nombre": "Billetera caballero",        "precio": 9000,        "imagen": "img/productos/cartera-009.jpg"      },                  
-      {        "id": 10,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-010.jpg"      },                  
-      {        "id": 11,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-011.jpg"      },                  
-      {        "id": 12,        "categoria_id": 1,        "nombre": "Cartera",        "precio": 9000,        "imagen": "img/productos/cartera-012.jpg"      },                  
-
-      {        "id": 13,        "categoria_id": 2,        "nombre": "Anillos",        "precio": 8000,        "imagen": "img/productos/anillo-001.jpg"      },
-      {        "id": 14,        "categoria_id": 2,        "nombre": "Anillos",        "precio": 9500,        "imagen": "img/productos/anillo-002.jpg"      },
-      {        "id": 15,        "categoria_id": 2,        "nombre": "Anillos",        "precio": 12000,        "imagen": "img/productos/anillo-003.jpg"      },
-      {        "id": 16,        "categoria_id": 2,        "nombre": "Anillos",        "precio": 12000,        "imagen": "img/productos/anillo-004.jpg"      },
-
-      {        "id": 17,        "categoria_id": 3,        "nombre": "Musleras",        "precio": 8000,        "imagen": "img/productos/otros-001.jpg"      },
-      {        "id": 18,        "categoria_id": 3,        "nombre": "Sombreros",        "precio": 8000,        "imagen": "img/productos/otros-002.jpg"      },
-      {        "id": 19,        "categoria_id": 3,        "nombre": "Cintillos",        "precio": 8000,        "imagen": "img/productos/otros-003.jpg"      },
-      {        "id": 20,        "categoria_id": 3,        "nombre": "Cinturones",        "precio": 8000,        "imagen": "img/productos/otros-004.jpg"      },
-      {        "id": 21,        "categoria_id": 3,        "nombre": "Guantes",        "precio": 8000,        "imagen": "img/productos/otros-005.jpg"      },
-      {        "id": 22,        "categoria_id": 3,        "nombre": "Guantes",        "precio": 8000,        "imagen": "img/productos/otros-006.jpg"      },
-      {        "id": 23,        "categoria_id": 3,        "nombre": "Chockers",        "precio": 8000,        "imagen": "img/productos/otros-007.jpg"      },
-      {        "id": 24,        "categoria_id": 3,        "nombre": "Chockers",        "precio": 8000,        "imagen": "img/productos/otros-008.jpg"      },
-      {        "id": 25,        "categoria_id": 3,        "nombre": "Cadenas",        "precio": 8000,        "imagen": "img/productos/otros-009.jpg"      },
-      {        "id": 26,        "categoria_id": 3,        "nombre": "Prendedores",        "precio": 8000,        "imagen": "img/productos/otros-010.jpg"      },
-      {        "id": 27,        "categoria_id": 3,        "nombre": "Zarcillos",        "precio": 8000,        "imagen": "img/productos/otros-011.jpg"      },
-      {        "id": 28,        "categoria_id": 3,        "nombre": "Collares",        "precio": 8000,        "imagen": "img/productos/otros-012.jpg"      },
-      {        "id": 29,        "categoria_id": 3,        "nombre": "Collares",        "precio": 8000,        "imagen": "img/productos/otros-013.jpg"      },
-      {        "id": 30,        "categoria_id": 3,        "nombre": "Muñequeras",        "precio": 8000,        "imagen": "img/productos/otros-014.jpg"      }
-    ]
-  }
-  
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Carteras"
+    },
+    {
+      "id": 2,
+      "nombre": "Anillos"
+    },
+    {
+      "id": 3,
+      "nombre": "Otros productos"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 10000,
+      "imagen": "img/productos/cartera-001.jpg"
+    },
+    {
+      "id": 2,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-004.jpg"
+    },
+    {
+      "id": 3,
+      "id_categoria": 1,
+      "nombre": "Porta celular",
+      "precio": 12000,
+      "imagen": "img/productos/cartera-003.jpg"
+    },
+    {
+      "id": 4,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 11000,
+      "imagen": "img/productos/cartera-002.jpg"
+    },
+    {
+      "id": 5,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-005.jpg"
+    },
+    {
+      "id": 6,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-006.jpg"
+    },
+    {
+      "id": 7,
+      "id_categoria": 1,
+      "nombre": "Porta cosméticos",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-007.jpg"
+    },
+    {
+      "id": 8,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-008.jpg"
+    },
+    {
+      "id": 9,
+      "id_categoria": 1,
+      "nombre": "Billetera caballero",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-009.jpg"
+    },
+    {
+      "id": 10,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-010.jpg"
+    },
+    {
+      "id": 11,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-011.jpg"
+    },
+    {
+      "id": 12,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-012.jpg"
+    },
+    {
+      "id": 13,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 8000,
+      "imagen": "img/productos/anillo-001.jpg"
+    },
+    {
+      "id": 14,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 9500,
+      "imagen": "img/productos/anillo-002.jpg"
+    },
+    {
+      "id": 15,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 12000,
+      "imagen": "img/productos/anillo-003.jpg"
+    },
+    {
+      "id": 16,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 12000,
+      "imagen": "img/productos/anillo-004.jpg"
+    },
+    {
+      "id": 17,
+      "id_categoria": 3,
+      "nombre": "Musleras",
+      "precio": 8000,
+      "imagen": "img/productos/otros-001.jpg"
+    },
+    {
+      "id": 18,
+      "id_categoria": 3,
+      "nombre": "Sombreros",
+      "precio": 8000,
+      "imagen": "img/productos/otros-002.jpg"
+    },
+    {
+      "id": 19,
+      "id_categoria": 3,
+      "nombre": "Cintillos",
+      "precio": 8000,
+      "imagen": "img/productos/otros-003.jpg"
+    },
+    {
+      "id": 20,
+      "id_categoria": 3,
+      "nombre": "Cinturones",
+      "precio": 8000,
+      "imagen": "img/productos/otros-004.jpg"
+    },
+    {
+      "id": 21,
+      "id_categoria": 3,
+      "nombre": "Guantes",
+      "precio": 8000,
+      "imagen": "img/productos/otros-005.jpg"
+    },
+    {
+      "id": 22,
+      "id_categoria": 3,
+      "nombre": "Guantes",
+      "precio": 8000,
+      "imagen": "img/productos/otros-006.jpg"
+    },
+    {
+      "id": 23,
+      "id_categoria": 3,
+      "nombre": "Chockers",
+      "precio": 8000,
+      "imagen": "img/productos/otros-007.jpg"
+    },
+    {
+      "id": 24,
+      "id_categoria": 3,
+      "nombre": "Chockers",
+      "precio": 8000,
+      "imagen": "img/productos/otros-008.jpg"
+    },
+    {
+      "id": 25,
+      "id_categoria": 3,
+      "nombre": "Cadenas",
+      "precio": 8000,
+      "imagen": "img/productos/otros-009.jpg"
+    },
+    {
+      "id": 26,
+      "id_categoria": 3,
+      "nombre": "Prendedores",
+      "precio": 8000,
+      "imagen": "img/productos/otros-010.jpg"
+    },
+    {
+      "id": 27,
+      "id_categoria": 3,
+      "nombre": "Zarcillos",
+      "precio": 8000,
+      "imagen": "img/productos/otros-011.jpg"
+    },
+    {
+      "id": 28,
+      "id_categoria": 3,
+      "nombre": "Collares",
+      "precio": 8000,
+      "imagen": "img/productos/otros-012.jpg"
+    },
+    {
+      "id": 29,
+      "id_categoria": 3,
+      "nombre": "Collares",
+      "precio": 8000,
+      "imagen": "img/productos/otros-013.jpg"
+    },
+    {
+      "id": 30,
+      "id_categoria": 3,
+      "nombre": "Muñequeras",
+      "precio": 8000,
+      "imagen": "img/productos/otros-014.jpg"
+    },
+    {
+      "id": "b528d157-0fb7-4528-b1e4-fe3a60685d41",
+      "id_categoria": 2,
+      "nombre": "2",
+      "precio": 2,
+      "imagen": "https://i.ibb.co/t2Z77rR/2.png"
+    },
+    {
+      "id": "6585d3d8-f5ac-4e46-ab0c-f065541becaf",
+      "id_categoria": 1,
+      "nombre": "1",
+      "precio": 1,
+      "imagen": "https://i.ibb.co/9hsmpvJ/Mi-proyecto.png"
+    },
+    {
+      "id": "d6a416a2-67ef-411f-96d8-47c290782d88",
+      "id_categoria": 3,
+      "nombre": "3",
+      "precio": 3,
+      "imagen": "https://i.ibb.co/6synBj5/Mi-proyecto.png"
+    },
+    {
+      "id": "6f4b5f5d-c375-4f6e-82dc-032c570edfe4",
+      "id_categoria": 4,
+      "nombre": "4",
+      "precio": 4,
+      "imagen": "https://i.ibb.co/XsFvz0F/3.png"
+    },
+    {
+      "id": "b40f147a-8436-45be-8a3f-874681aac657",
+      "id_categoria": 6,
+      "nombre": "6",
+      "precio": 6,
+      "imagen": "https://i.ibb.co/YysDfp9/black-rose-aesthetic-y050n6r6lngjbnen.jpg"
+    },
+    {
+      "id": "1856263a-f37b-410a-9b08-081f77f89460",
+      "id_categoria": 7,
+      "nombre": "7",
+      "precio": 7,
+      "imagen": "https://i.ibb.co/vzHXrSJ/4b72-a907-85a0514cff68.png"
+    }
+  ]
+}
