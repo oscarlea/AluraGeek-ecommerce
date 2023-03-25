@@ -12,22 +12,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <!-- -->
-<!--   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap"    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap"    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
--->  
-<!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/38a992f687.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer-contacto.css">
-  <!-- <link rel="stylesheet" href="css/contacto.css"> -->
   <link rel="stylesheet" href="css/developer.css">
-  <link rel="stylesheet" href="css/foo.css">
   <link rel="stylesheet" href="css/producto-nuevo.css">
-  
+  <link rel="stylesheet" href="css/drag-and-drop.css">
 </head>
 
 <body>
@@ -40,7 +33,7 @@
       </a>
       <h1 class="header__logo__titulo">
         <span class="span1">Gato</span>
-        <span class="span2">Negro</span>
+        <span class="span2">negro</span>
         <span class="span3"><br>DESIGN</span>
       </h1>
     </div>
@@ -73,6 +66,7 @@
           <label class="label__style">ID</label>
         </div>
  -->
+ <!-- 
       <div class="drag-and-drop__contenedor">
         <div class="" id="contenedor-imagen" ondrop="soltarImagen(event)" ondragover="permitirSoltar(event)">           
           <i class="fa-regular fa-image"></i>
@@ -82,19 +76,41 @@
           </div>
         </div>
       </div>
-      
-
+ -->
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+            <div id="drop-region">
+              <div class="drop-message">
+                <i class="fa-regular fa-image"></i>
+                  <br>
+                  Arrastre para agregar una imagen <br> ó <br> click para cargar.
+              </div>
+              <div id="image-preview"></div>
+            </div>
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- 
       <div class="boton__blanco fit-content" >
         <label for="fileInput" class="boton__blanco__texto">
           Busque en su computador<br>
           <input type="file" name="imagen" id="fileInput" accept="image/*" style="display: none;" data-imagen2>
         </label>
       </div>
-      
-      
+       -->
+<!--        
       <div class="input__contenedor">
         <input type="text" class="input__style" name="categoria_id" required data-id-categoria>
         <label class="label__style">Categoría ID</label>
+      </div>
+
+ -->      
+      <div class="input__contenedor">
+        <!-- <label class="label__style" for="categorias">Categoría ID</label> -->
+        <select class="input__style color999" name="categoria_id" required data-id-categoria>
+          <option value=1>Cartera</option>
+          <option value=2>Anillo</option>
+          <option value=3>Otros P</option>
+          <option value=4>Asdasd</option>
+          <option value=0 selected>Categoría</option>
+        </select>
       </div>
 
       <div class="input__contenedor">
@@ -132,13 +148,14 @@
     <div class="footer">
       <div class="footer__logo">
         <a href="index.html" class="footer__logo__link"></a><img src="img/logo2.png" alt=""
-          class="footer__logo__imagen">
-        <h1 class="footer__logo__titulo">GatoNegro</span>
+        class="footer__logo__imagen">
+        <h1 class="footer__logo__titulo">Gatonegro</span>
         </h1>
       </div>
-
+      
       <nav class="footer__menu">
         <ul class="footer__lista">
+          <img src="img/bruja.png" alt="" class="bruja">
           <li class="footer__item"><a href="header" class="footer__link">Quienes somos</a></li>
           <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
           <li class="footer__item"><a href="#" class="footer__link">Programa de fidelidad</a></li>
@@ -211,6 +228,8 @@
   </script>
 <!-- ------------------------------------------------------------------------------------------------------------- -->
   <script async src="https://imgbb.com/upload.js"></script>
+
+  <script src="js/drag-and-drop.js"></script>
 
 </body>
 

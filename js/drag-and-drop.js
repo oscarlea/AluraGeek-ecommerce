@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <script>
-        
 var // where files are dropped + file selector is opened
-	dropRegion = document.getElementById("drop-region"),
-	// where images are previewed
-	imagePreviewRegion = document.getElementById("image-preview");
-
+    dropRegion = document.getElementById("drop-region"),
+    // where images are previewed
+    imagePreviewRegion = document.getElementById("image-preview");
 
 // open file selector when clicked on the drop region
 var fakeInput = document.createElement("input");
 fakeInput.type = "file";
 fakeInput.accept = "image/*";
-fakeInput.multiple = true;
-dropRegion.addEventListener('click', function() {
-	fakeInput.click();
+fakeInput.multiple = false;
+dropRegion.addEventListener('click', function () {
+    fakeInput.click();
 });
 
 fakeInput.addEventListener("change", function() {
@@ -47,9 +34,7 @@ function handleDrop(e) {
 		files = dt.files;
 
 	if (files.length) {
-
 		handleFiles(files);
-		
 	} else {
 
 		// check for img
@@ -57,13 +42,10 @@ function handleDrop(e) {
 	        match = html && /\bsrc="?([^"\s]+)"?\s*/.exec(html),
 	        url = match && match[1];
 
-
-
 	    if (url) {
 	        uploadImageFromURL(url);
 	        return;
 	    }
-
 	}
 
 
@@ -81,19 +63,20 @@ function handleDrop(e) {
             	// call our main function
                 handleFiles( [blob] );
 
-            }, "image/png");
+            }, "image/png", 0.5);
         };
         img.onerror = function() {
             alert("Error in uploading");
         }
         img.crossOrigin = "";              // if from different origin
         img.src = url;
+        
+        console.log("uploadImageFromURL");
 	}
 
 }
 
 dropRegion.addEventListener('drop', handleDrop, false);
-
 
 
 function handleFiles(files) {
@@ -107,19 +90,16 @@ function validateImage(image) {
 	// check the type
 	var validTypes = ['image/jpeg', 'image/png', 'image/gif'];
 	if (validTypes.indexOf( image.type ) === -1) {
-		alert("Invalid File Type");
+		alert("Tipo de archivo invalido");
 		return false;
 	}
-
 	// check the size
 	var maxSizeInBytes = 10e6; // 10MB
 	if (image.size > maxSizeInBytes) {
-		alert("File too large");
+		alert("Archivo muy grande");
 		return false;
 	}
-
 	return true;
-
 }
 
 function previewAnduploadImage(image) {
@@ -147,12 +127,15 @@ function previewAnduploadImage(image) {
 	reader.readAsDataURL(image);
 
 	// create FormData
-	var formData = new FormData();
+ 	var formData = new FormData();
 	formData.append('image', image);
 
+    window.archivo = image;
+
+/*     
 	// upload the image
-	var uploadLocation = 'https://api.imgbb.com/1/upload';
-	formData.append('key', 'bb63bee9d9846c8d5b7947bcdb4b3573');
+	var uploadLocation = 'https://api.imgbb.com/1/upload?key=2e19dc41ed6f9adfef9db4e153ec1592';
+	formData.append('key', '2e19dc41ed6f9adfef9db4e153ec1592');
 
 	var ajax = new XMLHttpRequest();
 	ajax.open("POST", uploadLocation, true);
@@ -166,22 +149,14 @@ function previewAnduploadImage(image) {
 			}
 		}
 	}
-
 	ajax.upload.onprogress = function(e) {
-
 		// change progress
 		// (reduce the width of overlay)
-
 		var perc = (e.loaded / e.total * 100) || 100,
 			width = 100 - perc;
 
 		overlay.style.width = width;
 	}
-
 	ajax.send(formData);
-
+ */
 }
-    </script>
-    
-</body>
-</html>

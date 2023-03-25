@@ -5,7 +5,10 @@
     --rojo-oscuro: #8c2c26; /* Este es un tono rojo oscuro y se utiliza para títulos o botones. */
     --rojo: #d14138; /* Este es un tono rojo oscuro similar al anterior y también se utiliza para títulos o botones. */
     --placeholder-gris: #999999;
-    --font-family: Alegreya, sans-serif;
+    /* --font-family: 'Alegreya', sans-serif; */
+/*     --font-family: 'Cormorant', serif;   */
+    --font-family: 'Montserrat Alternates', sans-serif;  
+    --font-logo: 'Black Mountage-Regular';
     /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
     --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
     --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
@@ -17,13 +20,17 @@
     --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
 }
 
+@font-face {
+    font-family: 'Black Mountage-Regular';
+    src: url('/fonts/BlackmountageRegular.ttf');
+}
+
 *{
     box-sizing: border-box;
 }
 
 html {
     font-size: 16px; 
-/*     max-width: 1440px; */
     margin: 0 auto;
     background-color: #f5f5f5;
 }
@@ -32,7 +39,8 @@ body {
 /*     font-family: Raleway, sans-serif;
     font-family: "Gothic A1";
     font-family: 'Crimson Text', serif; */
-    font-family: Alegreya, sans-serif;
+    font-family: var(--font-family);
+    font-display: swap;
     background-color: #eae4d5;
 
     display: flex;

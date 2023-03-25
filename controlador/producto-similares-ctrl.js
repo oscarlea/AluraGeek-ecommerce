@@ -12,11 +12,10 @@ services
   .productosDeUnaCategoria(id)
   .then(data => {
     data
- 
 
         // Crea un elemento <ul> para los productos y agrega sus detalles
         .forEach(producto => {
-          
+         
           const listaProductos = document.querySelector(".producto__lista");
 
           const elementoProducto = document.createElement('li');
@@ -29,9 +28,5 @@ services
         `;
           listaProductos.appendChild(elementoProducto);
         });
-        // Agrega la lista de productos al contenedor de la categoría
-/*         contenedorProductos.appendChild(listaProductos); */
-        // Agrega el contenedor de la categoría al contenedor principal
-
   })
   .catch(error => console.log(error));

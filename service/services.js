@@ -1,7 +1,7 @@
 const listaProductosPorCategoria = () => {
   return Promise.all([
-    fetch('http://localhost:3000/categorias'),
-    fetch('http://localhost:3000/productos')
+    fetch('http://192.168.0.10:3000/categorias'),
+    fetch('http://192.168.0.10:3000/productos')
   ])
     .then(responses => Promise.all(responses.map(response => response.json())))
     .then(data => {
@@ -19,42 +19,25 @@ const listaProductosPorCategoria = () => {
 };
 /* --- --- --- --- -----------------------------------------------------------------------*/
 const listaProductos = () =>
-  fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+  fetch("http://192.168.0.10:3000/productos").then((respuesta) => respuesta.json());
 /* -------------------------------------------------------------------------------------- */
-
-/* const consultaPorId = () => {
-return fetch('http://localhost:3000/productos/1')
-  .then(response => response.json())
-  .then(data => {
-    // Manipular los datos recibidos, por ejemplo:
-    console.log(data.id);
-    console.log(data.nombre);
-    console.log(data.precio);
-  })
-  .catch(error => console.error(error));
-} */
 
 const getProducto = async (id) =>  {
   try {
-    const response = await fetch(`http://localhost:3000/productos/${id}`);
+    const response = await fetch(`http://192.168.0.10:3000/productos/${id}`);
     const data = await response.json();
-/*     console.log(data.id);
-    console.log(data.id_categoria);
-    console.log(data.nombre);
-    console.log(data.precio);
-    console.log(data.imagen);
- */    return data;
-  } catch (error) {
+      return data;
+    } catch (error) {
     console.error(error);
   }
 }
-/* getProduct(1); */
+
 /* -------------------------------------------------------------------------------------- */
 // Productos de una categoria
 
 const productosDeUnaCategoria = async (id_categoria) => {
   try {
-    const response = await fetch(`http://localhost:3000/productos?id_categoria=${id_categoria}`);
+    const response = await fetch(`http://192.168.0.10:3000/productos?id_categoria=${id_categoria}`);
     const data = await response.json();
     console.log(data);
     return data;
@@ -63,8 +46,8 @@ const productosDeUnaCategoria = async (id_categoria) => {
   }
 }
 
-// http://localhost:3000/productos?id_categoria=1
-/* --- --- --- --- -----------------------------------------------------------------------*/
+/* -----------------------------------------------------------------------------------*/
+
 const dataDelCono = () => {
   return fetch('../db.json')
     .then(response => response.json())
@@ -80,10 +63,11 @@ const dataDelCono = () => {
       return productosPorCategoria;
     });
 }
-/* --- --- --- --- -----------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------------*/
+
 const nuevoRegistroProducto = (id_categoria, nombre, precio, imagen) => {
-  return fetch('http://localhost:3000/productos', { 
-  /* return fetch('../db.json', {     */
+  return fetch('http://192.168.0.10:3000/productos', { 
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -94,20 +78,23 @@ const nuevoRegistroProducto = (id_categoria, nombre, precio, imagen) => {
   .then(data => console.log(data))
   .catch(error => console.error(error));
 };
+
 /* -----------------------------------------------------------------------------------*/
+
 const imbgg = (imageData) => {
-return fetch('https://api.imgbb.com/1/upload?key=2e19dc41ed6f9adfef9db4e153ec1592', {
-        method: 'POST',
-        body: imageData
-      }).then(response => response.json())
-        .then(data => {
-          const imageUrl = data.data.url;
-          return imageUrl;
-          // Aquí puedes hacer algo con la URL de la imagen cargada
-        })
-        .catch(error => console.error(error));
+  return fetch('https://api.imgbb.com/1/upload?key=2e19dc41ed6f9adfef9db4e153ec1592', {
+    method: 'POST',
+    body: imageData
+  }).then(response => response.json())
+    .then(data => {
+      const imageUrl = data.data.url;
+      return imageUrl;
+      // Aquí puedes hacer algo con la URL de la imagen cargada
+    })
+    .catch(error => console.error(error));
 };
 
+/* -----------------------------------------------------------------------------------*/
 
 export const services = {
   listaProductosPorCategoria,

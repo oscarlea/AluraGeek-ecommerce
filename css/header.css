@@ -22,10 +22,11 @@ body {
 }
 
 .header__logo__titulo {
-    font-family: Ink free;
+    font-family: var(--font-logo);
     font-weight: 600;
+    font-size: 1.5rem;
 
-    font-style: italic;
+    font-style: normal;
     line-height: 0px;
 
     position: relative;
@@ -34,11 +35,14 @@ body {
 
 .header__logo__titulo span.span1 {
     color: #8c2c26;
+    top: -3px;
+    position: relative;
 }
 
 .header__logo__titulo span.span2 {
     color: #000;
-    right: 5px;
+    right: 27px;
+    top: 9px;
     position: relative;
 }
 
@@ -47,11 +51,11 @@ body {
     font-family: Alegreya Sans SC;
     font-style: italic;
     font-weight: lighter;
-    font-size: 6px;
+    font-size: 3px;
     line-height: 8px;
     position: relative;
-    left: 12px;
-    bottom: 3px;
+    left: 17px;
+    bottom: -3px;
 }
 
 .header__search input[type="text"] {

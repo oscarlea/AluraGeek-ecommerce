@@ -83,11 +83,41 @@
     border-color: green;
 }
 
+select {
+    background-color: #fff;
+    color: var(--placeholder-gris);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
 
+option {
+     color: var(--placeholder-gris);
+    font-family: var(--font-family);
+    font-size: var(--step-0); 
+}
+
+.color999 {
+    color: #999;
+}
+
+/* select option {
+    color: var(--placeholder-gris);
+    font-family: var(--font-family);
+    font-size: var(--step-0);
+} */
 
 /* .producto__input {
     margin-bottom: 1rem;
 } */
+
+.bruja {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    width: 4rem;
+    left: 180px;
+    top: 70px;
+    position: absolute;
+    opacity: 0.2;
+}
 
 @media screen and (min-width: 768px) {
 

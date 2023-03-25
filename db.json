@@ -11,7 +11,11 @@
     {
       "id": 3,
       "nombre": "Otros productos"
-    }
+    },
+    {
+      "id": 4,
+      "nombre": "asdasd"
+    }    
   ],
   "productos": [
     {
@@ -225,46 +229,11 @@
       "imagen": "img/productos/otros-014.jpg"
     },
     {
-      "id": "b528d157-0fb7-4528-b1e4-fe3a60685d41",
-      "id_categoria": 2,
-      "nombre": "2",
-      "precio": 2,
-      "imagen": "https://i.ibb.co/t2Z77rR/2.png"
-    },
-    {
-      "id": "6585d3d8-f5ac-4e46-ab0c-f065541becaf",
-      "id_categoria": 1,
-      "nombre": "1",
-      "precio": 1,
-      "imagen": "https://i.ibb.co/9hsmpvJ/Mi-proyecto.png"
-    },
-    {
-      "id": "d6a416a2-67ef-411f-96d8-47c290782d88",
-      "id_categoria": 3,
-      "nombre": "3",
-      "precio": 3,
-      "imagen": "https://i.ibb.co/6synBj5/Mi-proyecto.png"
-    },
-    {
-      "id": "6f4b5f5d-c375-4f6e-82dc-032c570edfe4",
+      "id": "b93b5e5a-639f-4fd8-b6f1-d7a23a42b6a8",
       "id_categoria": 4,
-      "nombre": "4",
-      "precio": 4,
-      "imagen": "https://i.ibb.co/XsFvz0F/3.png"
-    },
-    {
-      "id": "b40f147a-8436-45be-8a3f-874681aac657",
-      "id_categoria": 6,
-      "nombre": "6",
-      "precio": 6,
-      "imagen": "https://i.ibb.co/YysDfp9/black-rose-aesthetic-y050n6r6lngjbnen.jpg"
-    },
-    {
-      "id": "1856263a-f37b-410a-9b08-081f77f89460",
-      "id_categoria": 7,
-      "nombre": "7",
-      "precio": 7,
-      "imagen": "https://i.ibb.co/vzHXrSJ/4b72-a907-85a0514cff68.png"
+      "nombre": "Gshdh",
+      "precio": 666,
+      "imagen": "https://i.ibb.co/vhRCcgV/SAVE-20230303-173140.jpg"
     }
   ]
 }

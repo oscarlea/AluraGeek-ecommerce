@@ -11,7 +11,7 @@ formulario.addEventListener("submit", (evento) => {
     imageData.append('image', window.archivo);  
     //imageData.append('image', fileInput.files[0]);
     services
-    .imbgg(imageData)
+    .imbgg(imageData) 
     .then((imageUrl) => {
         /* const id = document.querySelector("[data-id]").value; */
         const id_categoria = parseInt( document.querySelector("[data-id-categoria]").value);
@@ -27,12 +27,11 @@ formulario.addEventListener("submit", (evento) => {
             .catch((err) => console.log("ctrl -> " + err));
     })
     .catch((err) => console.log("ctrl -> " + err));
-    
 });
 
 /* -------- Mostrar imagen en el contenedor ----------------------------------------- */
 
-const fileInput = document.querySelector("#fileInput");
+/* const fileInput = document.querySelector("#fileInput");
 fileInput.addEventListener("change", () => {
 
     window.archivo = fileInput.files[0]
@@ -43,4 +42,5 @@ fileInput.addEventListener("change", () => {
       img.src = e.target.result;
     }
     reader.readAsDataURL(fileInput.files[0]);
-})  
+});
+ */
