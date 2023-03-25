@@ -3,12 +3,13 @@
 } */
 
 .login {
-    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    padding: 6rem 2.5rem;
-
-    background-size: cover;
+    padding: max(4vw,1rem);
+    width: 100%;
+    /*     background-color: var(--bg-color); */
+   /*  padding: 6rem 2.5rem; */
+/*     background-size: cover; */
 }
 
 .login__form {
@@ -27,7 +28,7 @@
 
 .login__input {
     margin-bottom: 1rem;
-    font-family: Alegreya, sans-serif;
+    font-family: var(--font-family);
     font-size: var(--step-0);
     line-height: 2.2rem;
     border: none;
@@ -40,15 +41,15 @@
 
 .login__input::placeholder {
     font-size: var(--step-0);
-    font-family: Alegreya, sans-serif;
+    font-family: var(--font-family);
     padding: 10px;
 } 
 
 .bat {
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
     width: 4rem;
-    left: -50px;
-    top: -50px;
+    left: max(4vw, 1rem);
+    top: max(4vw, 1rem);
     position: absolute;
     opacity: 0.2;
 }
@@ -82,7 +83,7 @@
     }
 
     .login {
-        padding-top: 5rem;
+        /* padding-top: 5rem; */
         align-items: center;
     }
 
@@ -95,9 +96,9 @@
         margin: 0;
     }
 
-    .contacto {
+/*     .contacto {
         padding-top: 2rem;
-    }
+    } */
 
     .contacto__titulo {
         margin-bottom: 1rem;

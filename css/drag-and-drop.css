@@ -6,7 +6,8 @@
 	text-align: center;
 	cursor:pointer;
 	transition:.3s;
-    max-width: 328px; 
+    max-width: 328px;
+    width: 100%;
 	/* width:360px;  */
 }
 #drop-region:hover {

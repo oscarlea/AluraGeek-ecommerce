@@ -89,7 +89,7 @@ body {
     padding-right: 12px;
     border: 0;
     width: 100%;
-    font-size: var(--step-0); /*  1rem; */
+    font-size: var(--step-0); 
     font-family: var(--font-family) ;
     color: var(--oscuro);
     border-radius: 4px;
