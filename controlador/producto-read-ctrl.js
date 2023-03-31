@@ -1,4 +1,5 @@
-import { services } from "../service/services.js";
+import { services } from "../service/services.js"; 
+/* import { services } from "../service/services-JSONBin.js";  */
 
 const crearNuevaLinea  = (id, categoria, nombre, precio, imagen) => {
     const linea = document.createElement("div");
@@ -24,11 +25,9 @@ const url = new URL(window.location);
 const id = url.searchParams.get("id");
 
 services
-  .getProducto(id)
+  .readProducto(id)
   .then(data => {
-/*         console.log("data -> " + data.id); */
         const nuevoContenedor = crearNuevaLinea(data.id, data.categoria_id, data.nombre, data.precio, data.imagen);
-        /* table.appendChild(nuevoContenedor); */
         contenedorPadre.insertBefore(nuevoContenedor, elementoExistente);
-  })
+})
   .catch((error) => alert("Ocurrió un error"));

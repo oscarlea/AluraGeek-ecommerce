@@ -20,8 +20,7 @@
 }
 
 .producto__titulo {
-    /* margin-bottom: 1rem; */
-    font-size: var(--step-1);  /* 22px; */
+    font-size: var(--step-1);
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 0em;
@@ -49,14 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; 
-    /*     
-    margin     : 0 auto;
-    background : rgb(233,233,233);
-    box-shadow : 0px 8px 24px rgba(0,0,0,0.25);
-    transition : all 400ms ease;
-	box-shadow:0 0 35px rgba(0,0,0,0.05);
-    height: 300px;
-    /* background-color: #eae4d5; */
+
 }
 
 #contenedor-imagen div {
@@ -104,41 +96,22 @@ option {
     color: #999;
 }
 
-/* select option {
-    color: var(--placeholder-gris);
-    font-family: var(--font-family);
-    font-size: var(--step-0);
-} */
-
-/* .producto__input {
-    margin-bottom: 1rem;
-} */
-
 .bruja {
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
     width: 4rem;
-/*     left: 180px;
-    top: 70px;
- */    position: absolute;
+    position: absolute;
     opacity: 0.2;
-
     top: 10px;
     right: 10px;
-/*     transform: translate(-50%, -50%); */
-
 }
 
-@media screen and (min-width: 768px) {
-
-    .producto {
-        /* margin: 2rem; */
-        width: 100%;
-/*         padding: 2rem; */
-    }
-    
-    .producto__contenedor div.boton__blanco {
-        width: fit-content;
-    }
+dialog {
+    width: 400px;
+    height: 250px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: Arial, sans-serif;
 }
 
 #contenedor-imagen {
@@ -146,13 +119,19 @@ option {
     max-height: 230px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 
     .producto {
-/*         padding-top: 3vw;
-        padding-bottom: 3vw; */
-        /* padding: 5vw; */
-    } 
+        width: 100%;
+    }
+    
+    .producto__contenedor div.boton__blanco {
+        width: fit-content;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
 
     .producto__contenedor {
         max-width: 50%;

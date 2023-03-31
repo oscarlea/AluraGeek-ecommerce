@@ -1,0 +1,89 @@
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <title>flex-basis (3). Cajas flexibles. CSS. Páginas web HTML y hojas de estilo CSS. Bartolomé Sintes Marco. www.mclibre.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 1rem;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap : min(4vw, 1rem);
+            max-width: 1136px;
+            width: 100%;
+            background-color: aqua;
+        }
+
+         
+        .flex-container::after {
+            content: "";
+            background-color: #eee;
+            /* flex: 2 0 156px; */
+            flex: 100;
+        }
+
+/*
+         .flex-container .flex-item {
+	        max-width: 100%;
+	        height: auto;
+        }
+
+ */
+        .flex-item {
+            background: tomato;
+/*             padding: 5px; */
+/*             height: 150px;  */
+/*             margin-top: 10px; */
+            /* margin-right: 5px; */
+            line-height: 150px; 
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            flex: 1 0 156px;
+           /*   max-width: 186px;   */ 
+        }
+    </style>
+  </head>
+  
+
+  <body>
+
+    
+    <ul class="flex-container">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+        <li class="flex-item">7</li>
+        <li class="flex-item">8</li>
+        <li class="flex-item">9</li>
+        <li class="flex-item">10</li>
+        <li class="flex-item">11</li>
+        <li class="flex-item">12</li>
+        <li class="flex-item">13</li>
+        <li class="flex-item">14</li>
+        <li class="flex-item">15</li>
+      </ul>
+    </div>
+  
+  
+  </body></html>

@@ -8,7 +8,6 @@
 	transition:.3s;
     max-width: 328px;
     width: 100%;
-	/* width:360px;  */
 }
 #drop-region:hover {
 	box-shadow:0 0 45px rgba(0,0,0,0.1);
@@ -27,16 +26,17 @@
 #image-preview {
 	margin-top:20px;
 }
+
 #image-preview .image-view {
     display: inline-block;
 	position:relative;
-	/* margin-right: 13px; */
 	margin-bottom: 13px;
 }
+
 #image-preview .image-view img {
     max-width: 290px; 
-/*     max-height: 200px; */
 }
+
 #image-preview .overlay {
     position: absolute;
     width: 100%;
@@ -44,6 +44,5 @@
     top: 0;
     right: 0;
     z-index: 2;
-/*     background: rgba(255,255,255,0.5); */
 }
 

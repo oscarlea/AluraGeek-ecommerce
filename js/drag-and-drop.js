@@ -132,31 +132,4 @@ function previewAnduploadImage(image) {
 
     window.archivo = image;
 
-/*     
-	// upload the image
-	var uploadLocation = 'https://api.imgbb.com/1/upload?key=2e19dc41ed6f9adfef9db4e153ec1592';
-	formData.append('key', '2e19dc41ed6f9adfef9db4e153ec1592');
-
-	var ajax = new XMLHttpRequest();
-	ajax.open("POST", uploadLocation, true);
-
-	ajax.onreadystatechange = function(e) {
-		if (ajax.readyState === 4) {
-			if (ajax.status === 200) {
-				// done!
-			} else {
-				// error!
-			}
-		}
-	}
-	ajax.upload.onprogress = function(e) {
-		// change progress
-		// (reduce the width of overlay)
-		var perc = (e.loaded / e.total * 100) || 100,
-			width = 100 - perc;
-
-		overlay.style.width = width;
-	}
-	ajax.send(formData);
- */
 }

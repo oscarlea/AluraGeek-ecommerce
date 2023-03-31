@@ -59,6 +59,18 @@
     {
       "id": 14,
       "nombre": "Zarcillos"
+    },
+    {
+      "id": 15,
+      "nombre": "Otros Productos"
+    },
+    {
+      "id": 16,
+      "nombre": "Todos los Productos"
+    },
+    {
+      "id": 17,
+      "nombre": "Ofertas"
     }
   ],
   "productos": [
@@ -260,6 +272,14 @@
       "nombre": "Zarcillos",
       "precio": 4000,
       "imagen": "https://i.ibb.co/dgxRX3V/otros-011.jpg",
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis. Corporis quibusdam voluptatum sit veritatis voluptas, sapiente inventore."
+    },
+    {
+      "id": "0893d542-f352-44e7-9d7b-39265555ab6b",
+      "id_categoria": 15,
+      "nombre": "Otros",
+      "precio": 2000,
+      "imagen": "https://i.ibb.co/t3kjDnF/otros-013.jpg",
       "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis. Corporis quibusdam voluptatum sit veritatis voluptas, sapiente inventore."
     }
   ]

@@ -8,8 +8,6 @@
     /* --font-family: 'Alegreya', sans-serif; */
 /*     --font-family: 'Cormorant', serif;   */
     --font-family: 'Montserrat Alternates', sans-serif;  
-    --font-logo: 'Black Mountage-Regular';
-    /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
     --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
     --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
     --step-0: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
@@ -20,11 +18,6 @@
     --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
 }
 
-@font-face {
-    font-family: 'Black Mountage-Regular';
-    src: url('/fonts/BlackmountageRegular.ttf');
-}
-
 *{
     box-sizing: border-box;
 }
@@ -32,26 +25,40 @@
 html {
     font-size: 16px; 
     margin: 0 auto;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; 
 }
 
 body {
+    --s: 220px; /* control the size */
+    --c1: #ede8dd;
+    --c2: #eae4d5;
+    
+    --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+    --_c:,#0000 75%,var(--c2) 0;
+    background:
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+      conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+      conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+      var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+    background-size: var(--s) var(--s);
+
 /*     font-family: Raleway, sans-serif;
     font-family: "Gothic A1";
     font-family: 'Crimson Text', serif; */
     font-family: var(--font-family);
     font-display: swap;
-    background-color: #eae4d5;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
-
-    /* gap: 1rem; */
 }
 
 /* / / / INPUT FIELDS/ / / */
+
+contenedor {
+    padding: max(4vw, 1rem);
+}
 
 .input__contenedor {
     float: left;
@@ -59,8 +66,6 @@ body {
     border-radius: 4px;
     width: 100%;
 }
-
-
 
 .input__style:focus ~ .label__style, .textarea__style:focus ~ .label__style, .input__style:valid ~ .label__style, .textarea__style:valid ~ .label__style {
     font-size: 0.75em;
@@ -108,12 +113,7 @@ body {
 .textarea__style {
     width: 100%;
     margin-bottom: 1rem;
-/*     min-height: 15em; */
 }
-
-/* .input__style {
-    margin-bottom: 1rem;
-} */
 
 input[type=file]::file-selector-button {
     background-color: #fff;
@@ -132,7 +132,6 @@ input[type=file]::file-selector-button {
     border: 0;
     padding: 11px;
     background-color: var(--rojo);
-/*     align-self: stretch; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -157,7 +156,6 @@ input[type=file]::file-selector-button {
     border: 1px solid #8c2c26;
     padding: 11px;
     background-color: #fff;
-/*     align-self: stretch; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -181,20 +179,10 @@ input[type=file]::file-selector-button {
     width: fit-content;
 }
 
-@media (min-width: 768px) {
-
-/*     body {
-        gap: 2rem;
-    } */
-}
-
 @media (min-width: 1440px) {
 
     body {
-      /* max-width: 1440px; */
       margin: 0 auto;
-      background-color: #d14138;
-      /* gap: 4rem; */
     }
 
   }

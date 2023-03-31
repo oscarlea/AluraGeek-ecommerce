@@ -14,50 +14,36 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/footer-contacto.css">
     <link rel="stylesheet" href="css/developer.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
-    <header class="header">
-
-        <div class="header__logo">
-            <a href="index.html" class="header__logo__link">
-                <img src="img/logo2.png" alt="" class="header__logo__imagen">
-            </a>
-                <h1 class="header__logo__titulo">
-                    <span class="span1">Gato</span>
-                    <span class="span2">negro</span> 
-                    <span class="span3"><br>DESIGN</span> 
-                </h1>
+    <header class="header" id="header">
+        <div class="header__contenedor">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo__link">
+                    <img src="img/logo2.png" alt="" class="header__logo__imagen">
+                    <img src="img/logo-rojo-negro.png" alt="" class="header__logo__imagen2">
+                </a>
+            </div>
         </div>
-          
-        <div class="header__search">
-            <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
-            <a class="header__search__icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-
     </header>
 
     <!-- section.login -->
     
     <div class="login">
-        <!-- <img class="login__imagen" src="img/bat.png" alt=""> -->
         <form class="login__form" action="">
             <h1 class="login__titulo">Iniciar Sesión</h1>
-            <input class="login__input" name="email" type="text" placeholder="Escriba su correo electrónico">
-            <input class="login__input" name="password" type="password" placeholder="Escriba su contraseña">
-            <button class="boton__rojo"  type="submit" onclick="location.href='producto-nuevo.html'">
+            <input class="login__input" id="login-email" name="username" type="text" placeholder="Escriba su correo electrónico" value="usuario" >
+            <input class="login__input" id="login-password" name="password" type="password" placeholder="Escriba su contraseña" value="1234">
+            <button class="boton__rojo" id="login-form-submit" type="" onsubmit="login()">
                 <div class="boton__rojo__texto">Entrar</div>
             </button>
-
-            
         </form>
-        
-        <button class="boton__rojo fit-content" type="submit" id="contacto__boton" onclick="location.href='producto-nuevo.html'">
-            <div class="boton__rojo__texto">Enviar mensaje</div>
-        </button>
+    
     </div>
 
     <!-- section.footer -->
@@ -65,30 +51,24 @@
     <section class="foo">
 
         <div class="footer">
-            <!-- <img src="img/grieta.png" alt="" class="grieta"> -->
-            <!-- <img src="img/shadow-box-frame-1.png" alt="" class="marco"> -->
-            
-            <img src="img/bat.png" alt="" class="bat">
             <div class="footer__logo">
                 <a href="index.html" class="footer__logo__link">
                     <img src="img/logo2.png" alt="" class="footer__logo__imagen">
+                    <img src="img/gatonegroblanco.png" alt="" class="header__logo__imagen2">
                 </a>
-                <h1 class="footer__logo__titulo">Gatonegro</span>
-                </h1>
             </div>
     
             <nav class="footer__menu">
                 <ul class="footer__lista">
-                    <li class="footer__item"><a href="#" class="footer__link">Quienes somos</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Programa de fidelidad</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Nuestras tiendas</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Quiero ser franquiciado</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Anúncie aquí</a></li>
+                    <li class="footer__item"><a href="#header" class="footer__link">Quienes somos</a></li>
+                    <li class="footer__item"><a href="#header" class="footer__link">Política de privacidad</a></li>
+                    <li class="footer__item"><a href="#header" class="footer__link">Programa de fidelidad</a></li>
+                    <li class="footer__item"><a href="#header" class="footer__link">Nuestras tiendas</a></li>
+                    <li class="footer__item"><a href="#header" class="footer__link">Quiero ser franquiciado</a></li>
+                    <li class="footer__item"><a href="#header" class="footer__link">Anúncie aquí</a></li>
                 </ul>
             </nav>
         </div>
-
     
         <div class="contacto">
             <form action="" class="contacto__form">
@@ -118,8 +98,6 @@
         <p class="developer__autor">Desarrollado por Oscar Leañez <br> 2023</p>
     </section>
 
-    <script src="https://kit.fontawesome.com/38a992f687.js" crossorigin="anonymous"></script>
-    <!-- <script type="module" src="controlador/controlador-2.js"></script> -->
-    <!-- <script src="js/login.js"></script> -->
+    <script src="js/login.js"></script>
 </body>
 </html>

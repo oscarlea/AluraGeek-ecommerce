@@ -1,0 +1,206 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Carteras"
+    },
+    {
+      "id": 2,
+      "nombre": "Anillos"
+    },
+    {
+      "id": 3,
+      "nombre": "Otros productos"
+    },
+    {
+      "id": 4,
+      "nombre": "asdasd"
+    }
+  ],
+  "productos": [
+    {
+      "id": 3,
+      "id_categoria": 1,
+      "nombre": "Porta celular",
+      "precio": 12000,
+      "imagen": "img/productos/cartera-003.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 4,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 11000,
+      "imagen": "img/productos/cartera-002.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 5,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-005.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 9,
+      "id_categoria": 1,
+      "nombre": "Billetera caballero",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-009.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 10,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-010.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 11,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-011.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 12,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 9000,
+      "imagen": "img/productos/cartera-012.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 13,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 8000,
+      "imagen": "img/productos/anillo-001.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 14,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 9500,
+      "imagen": "img/productos/anillo-002.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 15,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 12000,
+      "imagen": "img/productos/anillo-003.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 16,
+      "id_categoria": 2,
+      "nombre": "Anillos",
+      "precio": 12000,
+      "imagen": "img/productos/anillo-004.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 17,
+      "id_categoria": 3,
+      "nombre": "Musleras",
+      "precio": 8000,
+      "imagen": "img/productos/otros-001.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 18,
+      "id_categoria": 3,
+      "nombre": "Sombreros",
+      "precio": 8000,
+      "imagen": "img/productos/otros-002.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 19,
+      "id_categoria": 3,
+      "nombre": "Cintillos",
+      "precio": 8000,
+      "imagen": "img/productos/otros-003.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 21,
+      "id_categoria": 3,
+      "nombre": "Guantes",
+      "precio": 8000,
+      "imagen": "img/productos/otros-005.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 22,
+      "id_categoria": 3,
+      "nombre": "Guantes",
+      "precio": 8000,
+      "imagen": "img/productos/otros-006.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 23,
+      "id_categoria": 3,
+      "nombre": "Chockers",
+      "precio": 8000,
+      "imagen": "img/productos/otros-007.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 24,
+      "id_categoria": 3,
+      "nombre": "Chockers",
+      "precio": 8000,
+      "imagen": "img/productos/otros-008.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 25,
+      "id_categoria": 3,
+      "nombre": "Cadenas",
+      "precio": 8000,
+      "imagen": "img/productos/otros-009.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 26,
+      "id_categoria": 3,
+      "nombre": "Prendedores",
+      "precio": 8000,
+      "imagen": "img/productos/otros-010.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 27,
+      "id_categoria": 3,
+      "nombre": "Zarcillos",
+      "precio": 8000,
+      "imagen": "img/productos/otros-011.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 28,
+      "id_categoria": 3,
+      "nombre": "Collares",
+      "precio": 8000,
+      "imagen": "img/productos/otros-012.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 29,
+      "id_categoria": 3,
+      "nombre": "Collares",
+      "precio": 8000,
+      "imagen": "img/productos/otros-013.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    }
+  ]
+}

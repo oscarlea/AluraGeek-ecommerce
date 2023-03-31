@@ -1,9 +1,9 @@
 import { services } from "../service/services.js";
+/* import { services } from "../service/services-JSONBin.js"; */
 
 const contenedorProductos = document.getElementsByClassName("catalogo__contenedor")[0];
 
 services
-  /*  .dataDelCono()  */
   .listaProductosPorCategoria()
   .then(data => {
     data
@@ -23,7 +23,7 @@ services
           <img class="producto__imagen" src="${producto.imagen}" alt="${producto.nombre}">
           <h3 class="producto__titulo">${producto.nombre}</h3>
           <p class="producto__precio">Precio: $${producto.precio}</p>
-          <a class="producto__link" href="producto-detalle.html?id=${producto.id}&&id_categoria=${producto.id_categoria}" >Ver producto</a> 
+          <a class="producto__link" href="producto-read.html?id=${producto.id}&&id_categoria=${producto.id_categoria}" >Ver producto</a> 
         `;
           listaProductos.appendChild(elementoProducto);
         });

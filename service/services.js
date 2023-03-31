@@ -1,9 +1,67 @@
+/* const baseURL = 'https://api.npoint.io/17ec4660e2004cca6813';   */
+/* const baseURL = 'http://192.168.0.10:3000';   */
+
+const baseURL = 'https://my-json-server.typicode.com/oscarlea/AluraJSON'; 
+
+/* -----------------------------------------------------------------------------------*/
+
+const createProducto = (id_categoria, nombre, precio, imagen, descripcion) => {
+  return fetch(baseURL + '/productos', { 
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ id: generateUUID(), id_categoria, nombre, precio, imagen, descripcion})
+  })
+  .then(response => response.json())
+  /* .then(data => console.log(data)) */
+  .catch(error => console.error(error));
+};
+
+/* -------------------------------------------------------------------------------------- */
+
+const readProducto = async (id) =>  {
+  try {
+    const response = await fetch(baseURL + `/productos/${id}`);
+    const data = await response.json();
+      return data;
+    } catch (error) {
+    console.error(error);
+  }
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+const updatedProducto = (id, id_categoria, nombre, precio, imagen, descripcion) => {
+  return fetch(baseURL + `/productos/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ id_categoria, nombre, precio, imagen, descripcion }),
+  })
+    .then((respuesta) => respuesta)
+    .catch((err) => console.log(err));
+};
+
+/* -------------------------------------------------------------------------------------- */
+
+const deleteProducto = (id) => {
+  return fetch(baseURL + `/productos/${id}`, {
+    method: "DELETE",
+  });
+};
+
+/* -------------------------------------------------------------------------------------- */
+
 const listaProductosPorCategoria = () => {
   return Promise.all([
-    fetch('http://192.168.0.10:3000/categorias'),
-    fetch('http://192.168.0.10:3000/productos')
+    
+    fetch(baseURL + '/categorias'),
+    fetch(baseURL + '/productos')
+    
   ])
-    .then(responses => Promise.all(responses.map(response => response.json())))
+  .then(responses => Promise.all(responses.map(response => response.json())))
     .then(data => {
       const categorias = data[0];
       const productos = data[1];
@@ -17,29 +75,21 @@ const listaProductosPorCategoria = () => {
     })
     .catch(error => console.log(error));
 };
-/* --- --- --- --- -----------------------------------------------------------------------*/
+
+/* -------------------------------------------------------------------------------------- */
+
 const listaProductos = () =>
-  fetch("http://192.168.0.10:3000/productos").then((respuesta) => respuesta.json());
-/* -------------------------------------------------------------------------------------- */
-
-const getProducto = async (id) =>  {
-  try {
-    const response = await fetch(`http://192.168.0.10:3000/productos/${id}`);
-    const data = await response.json();
-      return data;
-    } catch (error) {
-    console.error(error);
-  }
-}
+  fetch(baseURL + "/productos").then((respuesta) => respuesta.json()); 
 
 /* -------------------------------------------------------------------------------------- */
+
 // Productos de una categoria
 
 const productosDeUnaCategoria = async (id_categoria) => {
   try {
-    const response = await fetch(`http://192.168.0.10:3000/productos?id_categoria=${id_categoria}`);
+    const response = await fetch(baseURL + `/productos?id_categoria=${id_categoria}`);
     const data = await response.json();
-    console.log(data);
+/*     console.log(data);  */
     return data;
   } catch (error) {
     console.error(error);
@@ -48,7 +98,7 @@ const productosDeUnaCategoria = async (id_categoria) => {
 
 /* -----------------------------------------------------------------------------------*/
 
-const dataDelCono = () => {
+const dataPruebas = () => {
   return fetch('../db.json')
     .then(response => response.json())
     .then(data => {
@@ -64,20 +114,6 @@ const dataDelCono = () => {
     });
 }
 
-/* -----------------------------------------------------------------------------------*/
-
-const nuevoRegistroProducto = (id_categoria, nombre, precio, imagen) => {
-  return fetch('http://192.168.0.10:3000/productos', { 
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ id: uuid.v4(), id_categoria, nombre, precio, imagen})
-  })
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-};
 
 /* -----------------------------------------------------------------------------------*/
 
@@ -97,11 +133,13 @@ const imbgg = (imageData) => {
 /* -----------------------------------------------------------------------------------*/
 
 export const services = {
+  createProducto,
+  readProducto,
+  updatedProducto,
+  deleteProducto,
   listaProductosPorCategoria,
   listaProductos,
-  dataDelCono,
-  nuevoRegistroProducto,
+  dataPruebas,
   imbgg,
-  getProducto,
   productosDeUnaCategoria,
 };

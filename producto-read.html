@@ -11,23 +11,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <!-- -->
-<!--     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet"> 
--->    
-<!--     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">  -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">  -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/footer-contacto.css">
     <link rel="stylesheet" href="css/developer.css">
+    <link rel="stylesheet" href="css/producto-detalle.css">
 </head>
 <body>
 
@@ -39,13 +32,6 @@
                     <img src="img/logo-rojo-negro.png" alt="" class="header__logo__imagen2">
                 </a>
             </div>
-    
-            <div class="header__login">
-                <button class="boton__blanco fit-content" type="submit" onclick="location.href='login.html'">
-                    <div class="boton__blanco__texto">Login</div>
-                </button>
-            </div>
-    
             <div class="header__search">
                 <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
                 <a class="header__search__icon" href="#"><i class="icon-search"></i></a>
@@ -53,30 +39,25 @@
         </div>
     </header>
 
-    <!-- section.banner -->
+<!-- section.detalle -->
 
-    <section class="banner">
-        <div class="banner__contenedor">
-            <h1 class="banner__titulo">Febrero Promocional</h1>
-            <h2 class="banner__subtitulo">Productos selecionados con 33% de descuento</h2>
-            <button class="boton__rojo fit-content" type="submit" onclick="location.href='#'">
-                <div class="boton__rojo__texto">Ofertas</div>
-            </button>
+    <section class="similares">
+        <div class="similares__contenedor">
+
+            <div class="categoria__titulo">
+                <h2>Productos Similares</h2>
+            </div>
+
+            <ul class="producto__lista">
+                <!-- contenido aquí -->
+            </ul>
         </div>
     </section>
 
-    <!-- section.catalogo> -->
-
-    <section class="catalogo">
-        <div class="catalogo__contenedor">
-            <!--  -->
-        </div>
-    </section>
 
     <!-- section.footer -->
-
     <section class="foo">
-
+    
         <div class="footer">
             <div class="footer__logo">
                 <a href="index.html" class="footer__logo__link">
@@ -99,24 +80,26 @@
     
         <div class="contacto">
             <form action="" class="contacto__form">
-              <span class="contacto__titulo">Hable con nosotros</span>
-        
-              <div class="input__contenedor">
-                <input type="text" class="input__style" name="nombre" placeholder="" maxlength="50" pattern="^[a-zA-ZñÑ\s]+$" required>
-                <label class="label__style">Nombre</label>
-              </div>
-        
-              <div class="input__contenedor">
-                <textarea class="textarea__style" name="mensaje" id="" cols="30" rows="2" maxlength="50" required></textarea>
-                <label class="label__style">Mensaje</label>
-              </div>
-        
-              <button class="boton__rojo fit-content" type="submit" id="contacto__boton">
-                <div class="boton__rojo__texto">Enviar mensaje</div>
-              </button>
+                <span class="contacto__titulo">Hable con nosotros</span>
+    
+                <div class="input__contenedor">
+                    <input type="text" class="input__style" name="nombre" placeholder="" maxlength="50"
+                        pattern="^[a-zA-ZñÑ\s]+$" required>
+                    <label class="label__style">Nombre</label>
+                </div>
+    
+                <div class="input__contenedor">
+                    <textarea class="textarea__style" name="mensaje" id="" cols="30" rows="2" maxlength="50"
+                        required></textarea>
+                    <label class="label__style">Mensaje</label>
+                </div>
+    
+                <button class="boton__rojo fit-content" type="submit" id="contacto__boton">
+                    <div class="boton__rojo__texto">Enviar mensaje</div>
+                </button>
             </form>
-          </div>
-
+        </div>
+    
     </section>
 
     <!-- section.developer -->
@@ -125,8 +108,8 @@
         <p class="developer__autor">Desarrollado por Oscar Leañez <br> 2023</p>
     </section>
 
-    <!-- -------------------------------------------------------------------------------------------------------- -->
 
-    <script type="module" src="controlador/producto-x-categoria-ctrl.js"></script>
+    <script type="module" src="controlador/producto-read-ctrl.js"></script>
+    <script type="module" src="controlador/producto-similares-ctrl.js"></script>
 </body>
 </html>

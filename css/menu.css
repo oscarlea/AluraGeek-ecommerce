@@ -1,0 +1,33 @@
+.header__menu__lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__menu__item {
+    list-style: none;
+}
+
+.header__menu__link {
+    color: #464646;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 18.78px;
+    margin-right: 0;
+    text-decoration: none;
+    padding-left: .5rem;
+}
+
+.header__menu__link--activo {
+    font-size: .875rem;
+    line-height: 18.78px;
+    margin-right: 0;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.header__menu__link:hover {
+    color: #333;
+    text-decoration: underline;
+} 

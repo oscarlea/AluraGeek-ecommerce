@@ -77,3 +77,56 @@ los siguientes pasos:
   al formulario : 
 
 	https://lp.alura.com.br/alura-latam-entrega-challenge-one-esp-front-end
+
+
+
+  los challenges se pueden entregar hasta el final de la formación, pero recomiendan ir llevando a tiempo junto con cada parte de la formación, por ej el alura geek tiene fecha recomendada hasta el 3 de abril que es cuando se libera react...
+
+
+  Resultados:
+
+  La pagina contiene elementos que no son compatibles con versiones antiguas de navegadores. Ejemplo La propiedad gap es relativamente nueva en CSS y no es compatible con todos los navegadores..
+
+	Estructura de datos JSON ;
+
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Carteras"
+    },
+    {
+      "id": 2,
+      "nombre": "Anillos"
+    },
+    {
+      "id": 3,
+      "nombre": "Otros productos"
+    },
+    {
+      "id": 4,
+      "nombre": "asdasd"
+    }
+  ],
+  "productos": [
+    {
+      "id": 3,
+      "id_categoria": 1,
+      "nombre": "Porta celular",
+      "precio": 12000,
+      "imagen": "img/productos/cartera-003.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    },
+    {
+      "id": 4,
+      "id_categoria": 1,
+      "nombre": "Cartera",
+      "precio": 11000,
+      "imagen": "img/productos/cartera-002.jpg",
+      "descripcion": "sdfjlsjljdfs"
+    }
+  ]
+}
+
+
+

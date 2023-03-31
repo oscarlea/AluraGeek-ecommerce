@@ -11,14 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <!-- -->
-<!--     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet"> 
--->    
-<!--     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">  -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">  -->
+    <!--  -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -28,6 +21,8 @@
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/footer-contacto.css">
     <link rel="stylesheet" href="css/developer.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
 
@@ -39,17 +34,20 @@
                     <img src="img/logo-rojo-negro.png" alt="" class="header__logo__imagen2">
                 </a>
             </div>
-    
-            <div class="header__login">
-                <button class="boton__blanco fit-content" type="submit" onclick="location.href='login.html'">
-                    <div class="boton__blanco__texto">Login</div>
-                </button>
-            </div>
-    
+
             <div class="header__search">
                 <input class="header__search__input" type="text" placeholder="¿Qué deseas buscar?">
                 <a class="header__search__icon" href="#"><i class="icon-search"></i></a>
             </div>
+
+            <nav class="header__menu">
+                <ul class="header__menu__lista">
+                    <li class="header__menu__item"><a href="productos.html" class="header__menu__link--activo">Productos</a></li>
+                    <li class="header__menu__item"><a href="#" class="header__menu__link">Categorias</a></li>
+                    <li class="header__menu__item"><a href="#" class="header__menu__link">Ofertas</a></li>
+                    <li class="header__menu__item"><a href="#" class="header__menu__link">Usuarios</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -69,7 +67,17 @@
 
     <section class="catalogo">
         <div class="catalogo__contenedor">
-            <!--  -->
+
+            <div class="categoria">
+                <h2 class="categoria__titulo">Todos los productos</h2>
+                <button class="boton__rojo fit-content" type="submit" id="" onclick="location.href='producto-create.html'">
+                    <div class="boton__rojo__texto">Agregar Producto</div>
+                </button>
+            </div>
+
+            <ul class="producto__lista">
+                <!-- pegue su contenido aquí -->
+            </ul>
         </div>
     </section>
 
@@ -79,10 +87,8 @@
 
         <div class="footer">
             <div class="footer__logo">
-                <a href="index.html" class="footer__logo__link">
-                    <img src="img/logo2.png" alt="" class="footer__logo__imagen">
-                    <img src="img/gatonegroblanco.png" alt="" class="header__logo__imagen2">
-                </a>
+                <a href="index.html" class="footer__logo__link"></a><img src="img/logo2.png" alt="" class="footer__logo__imagen">
+                <img src="img/gatonegroblanco.png" alt="" class="header__logo__imagen2">
             </div>
     
             <nav class="footer__menu">
@@ -125,8 +131,8 @@
         <p class="developer__autor">Desarrollado por Oscar Leañez <br> 2023</p>
     </section>
 
-    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
 
-    <script type="module" src="controlador/producto-x-categoria-ctrl.js"></script>
+    <script type="module" src="controlador/producto-lista-ctrl.js"></script> 
 </body>
 </html>
