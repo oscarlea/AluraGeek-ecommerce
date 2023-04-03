@@ -24,7 +24,7 @@
       "nombre": "Porta celular",
       "precio": 12000,
       "imagen": "img/productos/cartera-003.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis. Corporis quibusdam voluptatum sit veritatis voluptas, sapiente inventore."
     },
     {
       "id": 4,
@@ -32,7 +32,7 @@
       "nombre": "Cartera",
       "precio": 11000,
       "imagen": "img/productos/cartera-002.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis. Corporis quibusdam voluptatum sit veritatis voluptas, sapiente inventore."
     },
     {
       "id": 5,
@@ -40,7 +40,7 @@
       "nombre": "Cartera",
       "precio": 9000,
       "imagen": "img/productos/cartera-005.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis. Corporis quibusdam voluptatum sit veritatis voluptas, sapiente inventore."
     },
     {
       "id": 9,
@@ -48,7 +48,7 @@
       "nombre": "Billetera caballero",
       "precio": 9000,
       "imagen": "img/productos/cartera-009.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 10,
@@ -56,7 +56,7 @@
       "nombre": "Cartera",
       "precio": 9000,
       "imagen": "img/productos/cartera-010.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 11,
@@ -64,7 +64,7 @@
       "nombre": "Cartera",
       "precio": 9000,
       "imagen": "img/productos/cartera-011.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 12,
@@ -72,7 +72,7 @@
       "nombre": "Cartera",
       "precio": 9000,
       "imagen": "img/productos/cartera-012.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 13,
@@ -80,7 +80,7 @@
       "nombre": "Anillos",
       "precio": 8000,
       "imagen": "img/productos/anillo-001.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 14,
@@ -88,7 +88,7 @@
       "nombre": "Anillos",
       "precio": 9500,
       "imagen": "img/productos/anillo-002.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 15,
@@ -96,7 +96,7 @@
       "nombre": "Anillos",
       "precio": 12000,
       "imagen": "img/productos/anillo-003.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 16,
@@ -104,7 +104,7 @@
       "nombre": "Anillos",
       "precio": 12000,
       "imagen": "img/productos/anillo-004.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 17,
@@ -112,7 +112,7 @@
       "nombre": "Musleras",
       "precio": 8000,
       "imagen": "img/productos/otros-001.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 18,
@@ -120,7 +120,7 @@
       "nombre": "Sombreros",
       "precio": 8000,
       "imagen": "img/productos/otros-002.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 19,
@@ -128,7 +128,7 @@
       "nombre": "Cintillos",
       "precio": 8000,
       "imagen": "img/productos/otros-003.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 21,
@@ -136,7 +136,7 @@
       "nombre": "Guantes",
       "precio": 8000,
       "imagen": "img/productos/otros-005.jpg",
-      "descripcion": "sdfjlsjljdfs"
+      "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nesciunt neque, laudantium asperiores nostrum, corporis dignissimos animi unde facere recusandae voluptatem omnis."
     },
     {
       "id": 22,
