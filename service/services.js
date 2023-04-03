@@ -1,7 +1,8 @@
 /* const baseURL = 'https://api.npoint.io/17ec4660e2004cca6813';   */
 /* const baseURL = 'http://192.168.0.10:3000';   */
+/* const baseURL = 'https://my-json-server.typicode.com/oscarlea/AluraJSON';  */
 
-const baseURL = 'https://my-json-server.typicode.com/oscarlea/AluraJSON'; 
+const baseURL = 'https://alura-geek-ecommerce-gqgnz6xet-ojlc2007-gmailcom.vercel.app'; 
 
 /* -----------------------------------------------------------------------------------*/
 
