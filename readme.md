@@ -1,8 +1,31 @@
+En esta página podemos encontrar varios elementos relevantes para el desarrollo web. 
+
+My JSON Server
+
+My JSON Server es una herramienta útil para crear una API REST a partir de archivos JSON alojados en un repositorio GitHub, aunque tiene algunas limitaciones como la simulación de cambios y la caché de solicitudes. 
+
+Funcion UUID
+
+Por otro lado, utiliza una función propia de generación de UUID. Nos da más control y estabilidad en comparación con depender de un CDN.
+
+IconMoon
+
+IcoMoon es una herramienta que nos permite crear una biblioteca de iconos personalizada y liviana para nuestra página web, lo que nos brinda mayor flexibilidad y personalización en el uso de iconos. Además, podemos almacenar la biblioteca localmente para un acceso más rápido.
+
+ImgBB
+
+Imgbb es una plataforma de alojamiento de imágenes que ofrece una API fácil de usar y funciones avanzadas de compresión y edición de imágenes, lo que permite a los usuarios ajustar y optimizar sus imágenes antes de compartirlas en línea.
+
+Por último, es importante tener en cuenta que esta página incluye elementos que pueden no ser compatibles con versiones antiguas de navegadores, como la propiedad "gap" en CSS, entre otras.
+
+--------------------------------------------------------------------------------------------------------------
+
+El desafío
+
 Edición #4: Challenge ONE Front-end.
 Sprint 02 - AluraGeek: Creando tu proprio e-commerce.
 
 ¡Construirás un e-commerce usando HTML, CSS y Javascript, con soporte especializado a través de Discord.
-
 
 Historia
 
@@ -44,9 +67,6 @@ pero no será evaluada.
 
 Buen proyecto!
 --------------------------------------------------------------------------------------------------------
-Modelo Figma:
-https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?node-id=1%3A34
---------------------------------------------------------------------------------------------------------
 
 Elementos principales de la página
 
@@ -76,18 +96,12 @@ los siguientes pasos:
 - Completa el formulario de envío con el link del proyecto publicado con GitHub Pages Link 
   al formulario : 
 
-	https://lp.alura.com.br/alura-latam-entrega-challenge-one-esp-front-end
-
-
 
   los challenges se pueden entregar hasta el final de la formación, pero recomiendan ir llevando a tiempo junto con cada parte de la formación, por ej el alura geek tiene fecha recomendada hasta el 3 de abril que es cuando se libera react...
 
-
-  Resultados:
-
-  La pagina contiene elementos que no son compatibles con versiones antiguas de navegadores. Ejemplo La propiedad gap es relativamente nueva en CSS y no es compatible con todos los navegadores..
-
-	Estructura de datos JSON ;
+-------------------------------------------------------------------------------------------------------------
+  
+Estructura de datos JSON ;
 
 {
   "categorias": [
