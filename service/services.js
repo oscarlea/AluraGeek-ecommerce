@@ -2,7 +2,7 @@
 /* const baseURL = 'http://192.168.0.10:3000';   */
 /* const baseURL = 'https://my-json-server.typicode.com/oscarlea/AluraJSON';  */
 
-const baseURL = 'https://alura-geek-ecommerce-mu.vercel.app/'; 
+const baseURL = 'https://alura-geek-ecommerce-mu.vercel.app'; 
 
 /* -----------------------------------------------------------------------------------*/
 
